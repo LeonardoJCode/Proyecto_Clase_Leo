@@ -1,0 +1,379 @@
+/* SELECTOR PADRE */
+:root {
+    --colorPrimario: #EC111A;
+    --colorSecundario: #082BA5;
+    --colorTerciario: #007BDF;
+    --colorSombras: #282D31;
+    --colorTitulos: #282D31;
+    --colorParrafos: #53575A;
+    --colorBordes: #DFE0E0;
+    --colorWhatsApp: #25D366;
+}
+
+/* SELECTOR UNIVERSAL */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.icono-whatsapp {
+    font-size: 2.4em;
+    position: fixed;
+    bottom: 1em;
+    left: 1em;
+    color: #FFF;
+    background-color: var(--colorWhatsApp);
+    padding: .25em;
+    border-radius: 100%;
+    box-shadow: 0 4px 8px var(--colorSombras);
+    z-index: 1000;
+}
+.icono-whatsapp:hover {
+    background-color: #075E54;
+}
+
+/* INICIO DE MENÚ */
+header {
+    background-color: #FFF;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: 0 0 4px var(--colorSombras);
+    padding: .5em;
+}
+.menu {
+    width: 85%;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Poppins';
+}
+.img-logo {
+    height: 3em; /* Jamás con width */
+}
+.btn-menu {
+    display: none; /* Ocultar el ícono */
+}
+.enlaces {
+    text-align: right;
+}
+.enlaces a {
+    color: var(--colorParrafos);
+    text-decoration: none;
+    font-size: .9em;
+    padding: .8em;
+    font-weight: 500;
+}
+/* INICIO DE RESPONSIVE WEB DESIGN */
+@media screen and (max-width: 1023px) {
+    .menu {
+        flex-direction: column;
+    }
+    .btn-menu {
+        display: block;
+    }
+    .icono-menu {
+        color: var(--colorPrimario);
+        font-size: 2em;
+    }
+    .logo {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+        margin-top: 1em;
+    }
+    .enlaces {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+}
+/* FIN DE RESPONSIVE WEB DESIGN */
+/* FIN DE MENÚ */
+
+/* INICIO DE PÁGINA PRINCIPAL */
+.row-pd {
+    padding-top: 1.5em;
+    padding-bottom: 1.5em;
+}
+.titulo-2-inicio {
+    font-family: 'Poppins';
+    text-transform: uppercase;
+    font-size: 1.1em;
+    font-weight: 500;
+    margin-bottom: 0;
+    margin-top: 1em;
+    text-align: center;
+}
+.titulo-1-inicio {
+    font-family: 'Poppins';
+    text-transform: uppercase;
+    font-size: 1.5em;
+    font-weight: 600;
+    color: var(--colorPrimario);
+    text-align: center;
+}
+.subtitulo-2-inicio {
+    font-family: 'Poppins';
+    text-transform: uppercase;
+    font-size: 1.1em;
+    font-weight: 500;
+    margin-bottom: 0;
+}
+.subtitulo-1-inicio {
+    font-family: 'Poppins';
+    text-transform: uppercase;
+    font-size: 1.5em;
+    font-weight: 600;
+    color: var(--colorPrimario);
+    margin-bottom: 1em;
+}
+.parrafo-inicio {
+    text-align: justify;
+    font-family: 'Nunito';
+    color: var(--colorParrafos);
+}
+.btn-inicio {
+    background-color: var(--colorPrimario);
+    color: #FFF;
+    padding: .5em 1em;
+    border-radius: .2em;
+    text-decoration: none;
+    font-weight: 600;
+    margin-left: 4em;
+    display: inline-block;
+    margin-top: 1em;
+}
+
+/* RESPONSIVE WEB DESIGN */
+@media screen and (max-width: 1024px) {
+    .boton {
+        display: block;
+        max-width: 170px;
+        margin: auto;
+        margin-bottom: .8em;
+        text-align: center;
+    }
+}
+/* FIN DE RESPONSIVE WEB DESIGN */
+.btn-inicio:hover {
+    background-color: var(--colorSecundario);
+    color: #FFF;
+    cursor: pointer;
+    transition: background-color 1s ease-in-out;
+}
+/* FIN DE PÁGINA PRINCIPAL */
+
+
+/* INICIO DE PÁGINAS DE CURSOS Y ESPECIALIZACIONES (CARDS) */
+.titulo-1-cards {
+    text-align: center;
+    font-family: 'Poppins';
+    font-weight: 700;
+    font-size: 2em;
+    color: var(--colorTitulos);
+    margin-top: 3em;
+    margin-bottom: 1em;
+}
+
+.cards-grid {
+    display: grid;
+    gap: 1em;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    margin-bottom: 2em;
+}
+.card-beneficio {
+    box-shadow: 0 0 4px var(--colorSombras);
+}
+.card {
+    border-radius: .5em;
+    box-shadow: 0 0 4px var(--colorSombras);
+}
+.card-img img {
+    border-radius: .5em .5em 0 0;
+}
+.card-content {
+    padding: 1.2em;
+}
+.card-content a {
+    text-decoration: none;
+}
+.card-title {
+    font-family: 'Poppins';
+    font-size: 1em;
+    color: var(--colorParrafos);
+    text-align: center;
+    font-weight: 700;
+    margin-bottom: 1em;
+}
+.card-info {
+    font-family: 'Poppins';
+    font-weight: 600;
+    font-size: 1em;
+    padding: .5em;
+    border: 2px solid var(--colorPrimario);
+    background-color: #FFF;
+    color: var(--colorPrimario);
+    border-radius: .5em;
+    display: block;
+    text-align: center;
+}
+.card-info:hover {
+    background-color: var(--colorPrimario);
+    color: #FFF;
+}
+
+.contenedor-btn-cursos {
+    text-align: center;
+}
+.btn-cursos {
+    display: inline-block;
+    font-family: 'Poppins';
+    font-weight: 600;
+    font-size: 1em;
+    padding: .8em 1.2em;
+    border: 2px solid var(--colorPrimario);
+    background-color: #FFF;
+    color: var(--colorPrimario);
+    border-radius: .5em;
+    margin-bottom: 2em;
+    text-decoration: none;
+}
+.btn-cursos:hover {
+    background-color: var(--colorPrimario);
+    color: #FFF;
+}
+/* FIN DE PÁGINAS DE CURSOS Y ESPECIALIZACIONES (CARDS) */
+
+
+/* INICIO DE FORMULARIO DE CONTACTOS */
+.form-contactos {
+    background-color: #FFF;
+    padding: 1em;
+    border-radius: .5em;
+    box-shadow: 1px 1px 6px var(--colorSombras);
+    max-width: 1000px;
+    margin: 6em auto 2em auto;
+}
+label {
+    font-size: 1em;
+    font-family: 'Poppins';
+    font-weight: 600;
+    color: var(--colorPrimario);
+}
+.input, .caja {
+    width: 100%;
+    border-radius: .3em;
+    border: 1px solid var(--colorPrimario);
+    padding: .5em;
+    font-size: .9em;
+    font-family: 'Poppins';
+    font-weight: 600;
+    margin-bottom: 1em;
+}
+.caja {
+    min-height: 200px;
+    max-height: 250px;
+}
+.botonContacto {
+    width: 100%;
+    background-color: var(--colorPrimario);
+    border: none;
+    padding: .6em;
+    font-family: 'Poppins';
+    font-size: 1em;
+    font-weight: 600;
+    color: #FFF;   
+    transition: background-color 2s ease-in-out;
+}
+.botonContacto:hover{
+    background-color: var(--colorSecundario);
+    color: #FFF;
+}
+/* FIN DE FORMULARIO DE CONTACTOS */
+
+
+/* INICIO DE FORMULARIO DE REGISTRO */
+.form-registro {
+    box-shadow: 0 4px 8px var(--colorSombras);
+    border-radius: .5em;
+    padding: 1.5em;
+    max-width: 400px;
+    background-color: #FFF;
+    margin: 6em auto 2em auto;
+}
+
+.titulo-1-registro, .titulo-2-registro {
+    font-family: 'Urbanist';
+    font-weight: 600;
+}
+.titulo-1-registro {
+    color: var(--colorPrimario);
+    font-size: 1.2em;
+}
+.titulo-2-registro {
+    color: var(--colorParrafos);
+    font-size: 1em;
+}
+
+.caja-seleccion-registro select, .caja-registro input {
+    border: 1px solid var(--colorBordes);
+    border-radius: .5em;
+    padding: .6em .8em;
+    width: 100%;
+    margin: .5em 0;
+    outline: none;
+}
+.caja-seleccion-registro option, .caja-registro input::placeholder {
+    color: var(--colorParrafos);
+    font-weight: 600;
+}
+.caja-seleccion-registro select, .caja-registro input,
+.radio-btn-registro p, .radio-btn-registro label,
+.checkbox-registro label {
+    font-family: 'Urbanist';
+    color: var(--colorParrafos);
+    font-weight: 600;
+    font-size: .9em;
+}
+
+.radio-btn-registro p {
+    margin-bottom: .2em;
+}
+.radio-btn-registro label {
+    margin-right: 6em;
+}
+.radio-btn-registro input, .checkbox-registro input {
+    accent-color: var(--colorPrimario);
+}
+
+.checkbox-registro {
+    margin: .8em 0;
+}
+.checkbox-registro label {
+    font-size: .75em;
+}
+.checkbox-registro label a {
+    color: var(--colorPrimario);
+}
+
+.btn-registro input {
+    width: 100%;
+    background-color: var(--colorPrimario);
+    color: #FFF;
+    font-family: 'Urbanist';
+    border: none;
+    border-radius: .5em;
+    font-weight: 600;
+    padding: .7em 0;
+    transition: background-color 2s ease-in-out;
+}
+.btn-registro input:hover {
+    background-color: var(--colorSecundario);
+}
+/* FIN DE FORMULARIO DE REGISTRO */

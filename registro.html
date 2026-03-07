@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro - Devlab Escuela de Informática</title>
+
+    <!-- FRAMEWORK BOOTSTRAP -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <!-- LIBRERÍA DE FUENTES -->
+    <link href="https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <!-- LIBRERÍA DE ÍCONOS FONTAWESOME -->
+    <script src="https://kit.fontawesome.com/812c8ee19a.js" crossorigin="anonymous"></script>
+
+    <!-- FAVICON: ÍCONO PARA LA PESTAÑA DEL NAVEGADOR -->
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+
+    <!-- HOJA DE ESTILOS CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+
+    <!-- LIBRERÍA DE JQUERY -->
+    <script src="js/jquery.js"></script>
+</head>
+
+<body>
+    <!-- BOTON DE WHATSAPP -->
+    <a href="https://wa.link/9ooltw" target="_blank">
+        <i class="fa-brands fa-whatsapp icono-whatsapp"></i>
+    </a>
+    <!-- FIN DE BOTON DE WHATSAPP -->
+
+    <!-- MENÚ DE NAVEGACIÓN -->
+    <header id="header">
+        <nav class="menu">
+            <div class="logo">
+                <a href="#">
+                    <img src="img/Logo.svg" alt="" class="img-fluid img-logo" />
+                </a>
+                <a href="#" class="btn-menu" id="btn-menu">
+                    <i class="fa-solid fa-bars icono-menu"></i>
+                </a>
+            </div>
+            <div class="enlaces" id="enlaces">
+                <a href="index.html">INICIO</a>
+                <a href="cursos.html">CURSOS</a>
+                <a href="especializaciones.html">ESPECIALIZACIONES</a>
+                <a href="contactos.html">CONTACTOS</a>
+                <a href="registro.html">REGISTRO</a>
+                <a href="#">LOGIN</a>
+            </div>
+        </nav>
+    </header>
+    <!-- FIN DE MENÚ DE NAVEGACIÓN -->
+
+    <!-- INICIO DE FORMULARIO DE REGISTRO -->
+    <article class="container form-padre-registro">
+        <section class="row">
+            <section class="col-12">
+                <form action="#" method="post" class="form-registro">
+                    <h1 class="titulo-1-registro">Regístrate aquí para más información</h1>
+                    <h2 class="titulo-2-registro">Te contactaremos a la brevedad.</h2>
+
+                    <div class="caja-seleccion-registro">
+                        <select required>
+                            <option value="" disabled selected>¿Qué producto te interesa?</option>
+                            <option value="carreras">Carreras</option>
+                            <option value="diplomados">Diplomados</option>
+                            <option value="cursos">Cursos</option>
+                        </select>
+                    </div>
+
+                    <div class="caja-seleccion-registro">
+                        <select required>
+                            <option value="" disabled selected>¿Qué carrera te gustaría estudiar?</option>
+                            <option value="administracion_negocios">Administración de Negocios</option>
+                            <option value="contabilidad">Contabilidad</option>
+                            <option value="mecatronica_industrial">Mecatrónica Industrial</option>
+                            <option value="negocios_internacionales">Negocios Internacionales</option>
+                            <option value="computacion_informatica">Computación e Informática</option>
+                            <option value="diseno_grafico">Diseño Gráfico</option>
+                            <option value="enfermeria_tecnica">Enfermería Técnica</option>
+                            <option value="marketing">Marketing</option>
+                        </select>
+                    </div>
+
+                    <div class="caja-seleccion-registro">
+                        <select required>
+                            <option value="" disabled selected>Elige el campus</option>
+                            <option value="lima_sur">Lima Sur</option>
+                            <option value="lima_centro">Lima Centro</option>
+                            <option value="lima_norte">Lima Norte</option>
+                            <option value="surco">Surco</option>
+                            <option value="san_borja">San Borja</option>
+                            <option value="san_isidro">San Isidro</option>
+                        </select>
+                    </div>
+
+                    <div class="caja-registro">
+                        <input type="text" placeholder="Apellidos y Nombres" required>
+                    </div>
+                    <div class="caja-registro">
+                        <input type="email" placeholder="Correo electrónico" required>
+                    </div>
+                    <div class="caja-registro">
+                        <input type="tel" placeholder="Celular" maxlength="9" required>
+                    </div>
+
+
+                    <div class="radio-btn-registro">
+                        <p>¿Cómo nos comunicamos contigo?</p>
+
+                        <input type="radio" name="tipoContacto" id="tipoContactoWhatsapp" value="wsp" required>
+                        <label for="tipoContactoWhatsapp">WhatsApp</label>
+
+                        <input type="radio" name="tipoContacto" id="tipoContactoLlamada" value="llamada">
+                        <label for="tipoContactoLlamada">Llamada</label>
+                    </div>
+
+                    <div class="checkbox-registro">
+                        <input type="checkbox" id="terminos-condiciones" required>
+                        <label for="terminos-condiciones">
+                            Acepto las <a href="#">políticas de privacidad</a> y los
+                            <a href="#">términos y condiciones.</a>
+                        </label>
+                    </div>
+
+                    <div class="btn-registro">
+                        <input type="submit">
+                    </div>
+                </form>
+            </section>
+        </section>
+    </article>
+    <!-- FIN DE FORMULARIO DE REGISTRO -->
+
+    <script src="js/headroom.min.js"></script>
+    <script src="js/menu-flex.js"></script>
+</body>
+
+</html>
