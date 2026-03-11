@@ -8,6 +8,7 @@
     --colorParrafos: #53575A;
     --colorBordes: #DFE0E0;
     --colorWhatsApp: #25D366;
+    --colorNegro: #000;
 }
 
 /* SELECTOR UNIVERSAL */
@@ -377,3 +378,85 @@ label {
     background-color: var(--colorSecundario);
 }
 /* FIN DE FORMULARIO DE REGISTRO */
+
+/* INICIO DE FOOTER */
+.footer-p1 {
+  width: 100%;
+  background-color: var(--colorNegro);
+}
+.footer-contenedor {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 3em;
+    padding-bottom: 3em;
+}
+.footer-caja {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 3em;
+}
+.footer-icono {
+    font-size: 3em;
+    color: #FFF;
+}
+.footer-datos h3, .footer-datos p {
+    font-family: 'Poppins';
+    color: #FFF;
+}
+.footer-datos h3 {
+    font-weight: 700;
+    font-size: 1.4em;
+    margin-bottom: .5em;
+}
+.footer-datos p {
+    font-weight: 600;
+    font-size: 0.8em;
+    margin-bottom: .2em;
+}
+
+.footer-p2 {
+  width: 100%;
+  background-color: #191919;
+}
+.footer-copyright {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: .4em;
+    padding-bottom: .4em;
+}
+.footer-empresa, .footer-creditos {
+    font-family: 'Poppins';
+    font-size: 0.8em;
+    color: #FFF;
+    margin-bottom: 0;
+}
+.footer-autor {
+    color: var(--colorPrimario);
+}
+
+/* INICIO DE RESPONSIVE WEB DESIGN */
+@media screen and (max-width: 1023px) {
+    .footer-contenedor {
+        flex-direction: column;
+        gap: 2em;
+        text-align: center;
+    }
+    .footer-copyright {
+        flex-direction: column;
+        gap: 1em;
+        padding-top: 1em;
+        padding-bottom: 1em;
+        text-align: center;
+    }
+}
+/* FIN DE RESPONSIVE WEB DESIGN */
+/* FIN DE FOOTER */
